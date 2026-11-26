@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robitea Website</title>
+
+    <!-- Bootstrap CSS (Local Minified) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS (Opsional) -->
+    <style>
+        .container-custom {
+		  max-width: 700px; /* Tentukan lebar maksimal yang diinginkan */
+		}
+		
+		html {
+		  scroll-behavior: smooth;
+		}
+		
+		/* Tampilan Mobile (layar di bawah 768px) */
+		@media (max-width: 767.98px) {
+		  .nav-buttons .btn {
+			padding: 0.25rem 0.5rem; /* Menyamai ukuran btn-sm */
+			font-size: 0.78rem;
+		  }
+		}
+		
+		.feature-card {
+		  transition: transform 0.25s ease, box-shadow 0.25s ease;
+		}
+		.feature-card:hover {
+		  transform: translateY(-6px);
+		  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08) !important;
+		}
+		.icon-box {
+		  width: 56px;
+		  height: 56px;
+		  display: inline-flex;
+		  align-items: center;
+		  justify-content: center;
+		  border-radius: 14px;
+		  font-size: 1.6rem;
+		}
+    </style>
+</head>
+<body>
+
+<div class="container container-custom flex-wrap my-3">
+  <div class="d-flex justify-content-center flex-wrap gap-1 gap-md-2 nav-buttons">
+    <a href="./index.html" class="btn btn-dark">Home</a>
+    <a href="./pesan_lukisan.html" class="btn btn-dark">Pesan Lukisan</a>
+    <a href="./ketentuan_layanan.html" class="btn btn-dark">Ketentuan</a>
+    <a href="./kontak_saya.html" class="btn btn-dark">Kontak Saya</a>
+    <a href="./galery.html" class="btn btn-dark">Galery</a>
+    <a href="./video_demo.html" class="btn btn-dark">Video Demo Online</a>
+    <a href="./toko.html" class="btn btn-dark">Toko</a>
+    <a href="./sumber_daya.html" class="btn btn-dark">Sumber Daya</a>
+    <a href="./layanan.html" class="btn btn-dark">Layanan Workshop/Demo</a>
+	<a href="./antrian.html" class="btn btn-dark">Cek Antrian</a>
+    <a href="./dukungan.html" class="btn btn-dark">Dukungan</a>
+  </div>
+
+
+		
+		 
+	<div class="row mt-4">
+		<h1>Selamat Datang</h1>
+			<div class="col-md-12">
+				<p class="mb-3">kamu bisa mencari informasi tentang seni alat gambar ataupun melukis jelajahi tentang karya seni serta untuk penerapan di canvas atau kertas, untuk pemesanan lukisan dan kontak bisa menekan tombol dibawah teks ini</p>
+				<a 
+					href="https://wa.me/6282128818567?text=Halo%2C%20saya%20tertarik%20untuk%20memesan%20layanan%20ini." 
+					target="_blank" 
+					rel="noopener noreferrer" 
+					class="btn btn-dark btn-sm px-3 fw-semibold"
+				>
+					Pesan Sekarang
+				</a>
+			</div>
+		</div>
+		
+
+
+	<div class="container" id="layanan">
+    <h2 class="mb-4 text-center">Jelajahi Layanan Produk</h2>
+
+    <!-- Grid Layout 2 Kolom x 2 Baris -->
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      
+	<!-- Card 1 -->
+	<div class="col">
+	  <a href="./lukisan_portrait.html" class="text-decoration-none text-dark">
+		<div class="card h-100 text-start">
+		  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Pantai">
+		  <div class="card-body">
+			<h5 class="card-title">Portrait</h5>
+			<p class="card-text">Suasana pantai tropis dengan pasir putih dan air laut yang jernih.</p>
+		  </div>
+		</div>
+	  </a>
+	</div>
+
+      <!-- Card 2 -->
+	<div class="col">
+	  <a href="./lukisan_couple.html" class="text-decoration-none text-dark">
+		<div class="card h-100 text-start">
+		  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Pantai">
+		  <div class="card-body">
+			<h5 class="card-title">Couple</h5>
+			<p class="card-text">Suasana pantai tropis dengan pasir putih dan air laut yang jernih.</p>
+		  </div>
+		</div>
+	  </a>
+	</div>
+
+      <!-- Card 3 -->
+	<div class="col">
+	  <a href="./lukisan_hewan.html" class="text-decoration-none text-dark">
+		<div class="card h-100 text-start">
+		  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Pantai">
+		  <div class="card-body">
+			<h5 class="card-title">Hewan Peliharan</h5>
+			<p class="card-text">Suasana pantai tropis dengan pasir putih dan air laut yang jernih.</p>
+		  </div>
+		</div>
+	  </a>
+	</div>
+
+      <!-- Card 4 -->
+	<div class="col">
+	  <a href="./lukisan_ilustrasi.html" class="text-decoration-none text-dark">
+		<div class="card h-100 text-start">
+		  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Pantai">
+		  <div class="card-body">
+			<h5 class="card-title">Ilustrasi Imajinasi</h5>
+			<p class="card-text">Suasana pantai tropis dengan pasir putih dan air laut yang jernih.</p>
+		  </div>
+		</div>
+	  </a>
+	</div>
+	  
+	  <!-- Card 5 -->
+	<div class="col">
+	  <a href="./lukisan_ilustrasi.html" class="text-decoration-none text-dark">
+		<div class="card h-100 text-start">
+		  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Pantai">
+		  <div class="card-body">
+			<h5 class="card-title">Ilustrasi Imajinasi</h5>
+			<p class="card-text">Suasana pantai tropis dengan pasir putih dan air laut yang jernih.</p>
+		  </div>
+		</div>
+	  </a>
+	</div>
+	  
+	  <!-- Card 5 -->
+	<div class="col">
+	  <a href="./lukisan_makanan.html" class="text-decoration-none text-dark">
+		<div class="card h-100 text-start">
+		  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Pantai">
+		  <div class="card-body">
+			<h5 class="card-title">Makanan</h5>
+			<p class="card-text">Suasana pantai tropis dengan pasir putih dan air laut yang jernih.</p>
+		  </div>
+		</div>
+	  </a>
+	</div>
+	  
+	  
+	  <!-- Card 6 -->
+	<div class="col">
+	  <a href="./lukisan_collase.html" class="text-decoration-none text-dark">
+		<div class="card h-100 text-start">
+		  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Pantai">
+		  <div class="card-body">
+			<h5 class="card-title">Kumpulan Gambar Kolase</h5>
+			<p class="card-text">Suasana pantai tropis dengan pasir putih dan air laut yang jernih.</p>
+		  </div>
+		</div>
+	  </a>
+	</div>
+	  
+	  
+	  <!-- Card 7 -->
+	<div class="col">
+	  <a href="./lukisan_keluarga.html" class="text-decoration-none text-dark">
+		<div class="card h-100 text-start">
+		  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Pantai">
+		  <div class="card-body">
+			<h5 class="card-title">Lukisan Keluarga</h5>
+			<p class="card-text">Suasana pantai tropis dengan pasir putih dan air laut yang jernih.</p>
+		  </div>
+		</div>
+	  </a>
+	</div>
+
+    </div>
+  </div>
+
+	<div class="container py-5">
+
+	<div class="text-center mb-5 text-bold"><h2>Kenapa Pesan Lukisan Saya</h2></div>
+
+
+	<!-- Baris 1: Posisi Kiri -->
+	<div class="row justify-content-start mb-4">
+	  <div class="col-12 col-md-7 text-center text-md-start">
+		<h3 class="fw-bold">Hasil Berkualitas Tinggi</h3>
+		<p class="text-secondary mb-0">
+		  Kamu akan menerima lukisan dengan kualitas yang sangat bagus yang siap langsung digunakan.
+		</p>
+	  </div>
+	</div>
+
+	<!-- Baris 2: Posisi Kanan -->
+	<div class="row justify-content-end mb-4">
+	  <div class="col-12 col-md-7 text-center text-md-end">
+		<h3 class="fw-bold">Lukisan Asli</h3>
+		<p class="text-secondary mb-0">
+		  Semua karya dibuat murni secara menggunakan tangan dan proses kreatif saya sendiri. lukisan dibuat secara tradisional dengan baik.
+		</p>
+	  </div>
+	</div>
+
+	<!-- Baris 3: Posisi Kiri -->
+	<div class="row justify-content-start mb-4">
+	  <div class="col-12 col-md-7 text-center text-md-start">
+		<h3 class="fw-bold">Harga Terjangkau</h3>
+		<p class="text-secondary mb-0">
+		  lukisan yang indah harusnya bisa dinikmati siapa saja. Saya menawarkan tarif yang bersahabat supaya kamu bisa memesan ilustrasi tanpa ragu.
+		</p>
+	  </div>
+	</div>
+
+	<!-- Baris 4: Posisi Kanan -->
+	<div class="row justify-content-end mb-4">
+	  <div class="col-12 col-md-7 text-center text-md-end">
+		<h3 class="fw-bold">Revisi Fleksibel</h3>
+		<p class="text-secondary mb-0">
+		  Ada bagian yang perlu disesuaikan? Sudah termasuk revisi minor gratis di tahap sketsa dan pewarnaan untuk memastikan hasilnya pas di hati. (berlaku untuk paket ilustrasi)
+		</p>
+	  </div>
+	</div>
+
+	<!-- Baris 5: Posisi Kiri -->
+	<div class="row justify-content-start">
+	  <div class="col-12 col-md-7 text-center text-md-start">
+		<h3 class="fw-bold">Pengiriman Aman</h3>
+		<p class="text-secondary mb-0">
+		  Pengiriman aman karena menggunakan pipa kertas tebal dan dibungkus lagi dengan buble wrap sehingga aman dari hujan atau terlipat.
+		</p>
+	  </div>
+	</div>
+
+  </div>
+
+		
+
+<!-- 2. MENGAPA MEMILIH LUKISAN TANGAN (#kelebihan) -->
+    <section id="kelebihan" class="section-space">
+        <div class="mb-3">
+            <h2 class="h4 fw-bold mb-1">Keunggulan Lukisan Portrait Cat Air</h2>
+            <p class="text-secondary small mb-0">Karya menarik dengan menggunakan lukisan cat air</p>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-sm-6">
+                <div class="card box-flat h-100">
+                    <div class="card-body p-3">
+                        <h3 class="card-title fw-bold text-sage small mb-1">01. 100% Sapuan Kuas Manual</h3>
+                        <p class="card-text text-secondary small mb-0">Setiap gradasi kulit dan cahaya kertas tercipta secara organik—tidak pernah ada dua lukisan yang identik.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card box-flat h-100">
+                    <div class="card-body p-3">
+                        <h3 class="card-title fw-bold text-sage small mb-1">02. Menyatukan Foto Terpisah</h3>
+                        <p class="card-text text-secondary small mb-0">Bisa menggabungkan foto anggota keluarga yang berbeda waktu menjadi satu komposisi hangat dalam satu bingkai.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card box-flat h-100">
+                    <div class="card-body p-3">
+                        <h3 class="card-title fw-bold text-sage small mb-1">03. Kertas 300 gsm Bebas Asam</h3>
+                        <p class="card-text text-secondary small mb-0">Menggunakan kertas tebal bertekstur alami dan pigmen tahan pudar sehingga awet disimpan puluhan tahun.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card box-flat h-100">
+                    <div class="card-body p-3">
+                        <h3 class="card-title fw-bold text-sage small mb-1">04. Update Preview Tahap Sketsa</h3>
+                        <p class="card-text text-secondary small mb-0">Anda memeriksa dan menyetujui kemiripan proporsi wajah pada tahap sketsa pensil sebelum pewarnaan dimulai.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- FAQ (PERTANYAAN YANG SERING DIAJUKAN) -->
+  <section class="py-5 col-md-12">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold">Pertanyaan yang Sering Diajukan</h2>
+            <p class="text-body-secondary">Hal-hal yang perlu kamu ketahui sebelum memesan.</p>
+          </div>
+
+          <div class="accordion" id="faqLukisan">
+            <!-- Item 1 -->
+            <div class="accordion-item border rounded-0 mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold bg-white text-dark shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  Berapa lama proses pengerjaannya?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqLukisan">
+                <div class="accordion-body text-body-secondary border-top">
+                  Umumnya memakan waktu <strong>1 hingga 7 hari kerja</strong> tergantung kerumitan detail pakaian dan antrean saat itu. Jika kamu membutuhkan untuk tanggal acara yang mendesak, silakan hubungi terlebih dahulu untuk mengecek ketersediaan slot kilat.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item border rounded-0 mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold bg-white text-dark shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  Foto seperti apa yang paling bagus untuk dilukis?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqLukisan">
+                <div class="accordion-body text-body-secondary border-top">
+                  Pilih foto dengan pencahayaan terang (tidak gelap/backlight) dan fitur wajah yang terlihat jelas saat diperbesar. Jika ragu, kamu bisa mengirimkan 2–3 pilihan foto agar saya bantu pilihkan yang paling optimal untuk cat air.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item border rounded-0 mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold bg-white text-dark shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  Apakah harga sudah termasuk bingkai (frame)?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqLukisan">
+                <div class="accordion-body text-body-secondary border-top">
+                  Harga dasar berlaku untuk karya lukisan saja (tanpa bingkai) agar ongkos kirim lebih hemat dan bebas risiko kaca pecah di perjalanan. Namun, kamu bisa membeli figura di toko online atau offline.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="accordion-item border rounded-0">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold bg-white text-dark shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                  Apakah bisa revisi setelah lukisan diwarnai?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqLukisan">
+                <div class="accordion-body text-body-secondary border-top">
+                  Karena sifat cat air yang permanen di atas kertas, perubahan bentuk wajah hanya bisa dilakukan pada <strong>tahap sketsa pensil</strong>. Setelah tahap cat air selesai, hanya penyesuaian detail kecil atau kontras ringan yang dapat dilakukan.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA PENUTUP (CALL TO ACTION) -->
+  <section class="py-5 bg-light border-top">
+    <div class="container text-center py-3">
+      <h2 class="fw-bold mb-3">Siap Mengabadikan Momen ?</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <p class="text-body-secondary mb-4">
+            Konsultasikan foto pilihanmu sekarang secara gratis. Slot pengerjaan dibuka terbatas agar setiap lukisan mendapatkan perhatian penuh.
+          </p>
+        </div>
+      </div>
+      <a href="#form-order" class="btn btn-dark btn-lg px-5 rounded-1">Mulai Pesan Lukisan</a>
+    </div>
+  </section>
+
+		
+		
+	
+	
+	
+
+    <!-- Bootstrap JS Bundle (Local Minified - Sudah termasuk Popper) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS (Opsional) -->
+    <script>
+        // Tulis JavaScript tambahan di sini
+    </script>
+</body>
+</html>
