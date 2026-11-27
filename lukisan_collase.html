@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robitea Website — Lukisan Portrait Cat Air Custom</title>
+
+    <!-- Bootstrap CSS (Local Minified) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --bg-paper: #ffffff;
+            --bg-card: #ffffff;
+            --ink-dark: #1f2421;
+            --ink-muted: #5a625e;
+            --accent-sage: #2e4a41;
+            --accent-ochre: #b56936;
+            --border-flat: #dcd7cc;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: var(--ink-dark);
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container-custom {
+            max-width: 700px;
+        }
+
+        @media (max-width: 767.98px) {
+            .nav-buttons .btn {
+                padding: 0.25rem 0.5rem;
+                font-size: 0.78rem;
+            }
+        }
+
+        /* Gaya Flat & Bordered sesuai estetika kertas cat air */
+        .box-flat {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-flat);
+            border-radius: 6px;
+        }
+
+        .box-highlight {
+            background-color: var(--bg-card);
+            border: 2px solid var(--accent-sage);
+            border-radius: 6px;
+        }
+
+        .badge-paper {
+            background-color: #ece6da;
+            color: #3a362f;
+            border: 1px solid #d8d0c1;
+            font-weight: 600;
+        }
+
+        .text-sage {
+            color: var(--accent-sage);
+        }
+
+        .text-ochre {
+            color: var(--accent-ochre);
+        }
+
+        .btn-sage {
+            background-color: var(--accent-sage);
+            border: 1px solid var(--accent-sage);
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .btn-sage:hover {
+            background-color: #223831;
+            border-color: #223831;
+            color: #ffffff;
+        }
+
+        .btn-sage-outline {
+            background-color: transparent;
+            border: 1px solid var(--accent-sage);
+            color: var(--accent-sage);
+            font-weight: 600;
+        }
+
+        .btn-sage-outline:hover {
+            background-color: var(--accent-sage);
+            color: #ffffff;
+        }
+
+        .section-space {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-flat);
+        }
+
+        .art-preview-frame {
+            background-color: #f3efe6;
+            border: 1px solid var(--border-flat);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container container-custom my-3 pb-5">
+
+    <!-- 1. HERO SECTION -->
+    <header class="box-flat p-4 p-md-4 mb-4">
+        <div class="row align-items-center g-4">
+            <div class="col-md-7">
+                <span class="badge badge-paper mb-2">Lukisan Tangan Asli</span>
+                <h1 class="h3 fw-bold lh-sm mb-3">Abadikan Momen Berharga Menjadi Lukisan Portrait Cat Air</h1>
+                <p class="text-secondary small mb-3">
+                    Ubah foto favorit orang terdekat menjadi karya seni lukis manual di atas kertas. Cocok untuk kado pernikahan, ulang tahun, wisuda, maupun kenang-kenangan keluarga.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                    <a href="#pesan" class="btn btn-sage btn-sm px-3 py-2">Hitung Biaya & Pesan</a>
+                    <a href="./galery.html" class="btn btn-sage-outline btn-sm px-3 py-2">Lihat Galeri Karya</a>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="art-preview-frame p-2 text-center">
+                    <svg viewBox="0 0 240 280" class="w-100" style="max-height: 230px;" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <filter id="wcBlur" x="-15%" y="-15%" width="130%" height="130%">
+                                <feGaussianBlur stdDeviation="8" />
+                            </filter>
+                        </defs>
+                        <rect width="240" height="280" fill="#faf7f2" />
+                        <circle cx="120" cy="125" r="78" fill="#d9e4dd" opacity="0.75" filter="url(#wcBlur)" />
+                        <circle cx="95" cy="155" r="55" fill="#f0d7c4" opacity="0.65" filter="url(#wcBlur)" />
+                        <circle cx="150" cy="105" r="48" fill="#e6dec8" opacity="0.7" filter="url(#wcBlur)" />
+                        <path d="M68 245 C72 200, 95 188, 120 188 C145 188, 168 200, 172 245 Z" fill="#46635a" opacity="0.85" />
+                        <ellipse cx="120" cy="128" rx="34" ry="44" fill="#edd1be" />
+                        <path d="M84 122 C84 82, 156 82, 156 122 C156 96, 138 88, 120 88 C102 88, 84 96, 84 122 Z" fill="#3b332d" opacity="0.9" />
+                        <circle cx="52" cy="74" r="4" fill="#b56936" opacity="0.55" />
+                        <circle cx="188" cy="192" r="5" fill="#2e4a41" opacity="0.45" />
+                        <circle cx="176" cy="68" r="3" fill="#b56936" opacity="0.45" />
+                    </svg>
+                    <div class="small text-muted py-1 border-top" style="font-size: 0.75rem;">Kertas Cat Air Cold-Press</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. MENGAPA MEMILIH LUKISAN TANGAN (#kelebihan) -->
+    <section id="kelebihan" class="section-space">
+        <div class="mb-3">
+            <h2 class="h4 fw-bold mb-1">Keunggulan Lukisan Portrait Cat Air</h2>
+            <p class="text-secondary small mb-0">Karya lukisan cocok yang untuk anda yang ingin untuk ulang tahun, aniversary, dan lainya.</p>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-sm-6">
+                <div class="box-flat p-3 h-100">
+                    <div class="fw-bold text-sage small mb-1">01. Sapuan Kuas Asli</div>
+                    <p class="text-secondary small mb-0">Setiap gradasi kulit dan cahaya kertas tercipta secara organik setiap lukisan yang telah dibuat.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="box-flat p-3 h-100">
+                    <div class="fw-bold text-sage small mb-1">02. Menyatukan Foto Terpisah</div>
+                    <p class="text-secondary small mb-0">Bisa menggabungkan foto anggota keluarga yang berbeda waktu menjadi satu komposisi hangat dalam satu bingkai.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="box-flat p-3 h-100">
+                    <div class="fw-bold text-sage small mb-1">03. Kertas Cat Air Bebas Asam</div>
+                    <p class="text-secondary small mb-0">Menggunakan kertas bertekstur alami dan pigmen tahan pudar sehingga awet disimpan jangka panjang.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="box-flat p-3 h-100">
+                    <div class="fw-bold text-sage small mb-1">04. Update Preview Tahap Sketsa</div>
+                    <p class="text-secondary small mb-0">Anda memeriksa dan menyetujui kemiripan proporsi wajah pada tahap sketsa pensil sebelum pewarnaan dimulai.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabel Perbandingan Singkat -->
+        <div class="box-flat p-3 mt-3">
+            <div class="table-responsive">
+                <table class="table table-sm table-bordered align-middle mb-0 small">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Aspek</th>
+                            <th class="text-sage">Lukisan Tangan Cat Air</th>
+                            <th class="text-muted">Cetak Foto / Filter Aplikasi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-semibold">Proses</td>
+                            <td>Sketsa manual & sapuan kuas berlapis</td>
+                            <td class="text-muted">Filter otomatis dalam hitungan detik</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Tekstur</td>
+                            <td>Serat kertas cat air terasa nyata</td>
+                            <td class="text-muted">Permukaan datar tinta printer biasa</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-semibold">Kustomisasi</td>
+                            <td>Bisa gabung foto & rapikan pencahayaan</td>
+                            <td class="text-muted">Terbatas pada file foto asli</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. PILIHAN LAYANAN & UKURAN (#layanan) -->
+    <section id="layanan" class="section-space">
+        <div class="mb-3">
+            <h2 class="h4 fw-bold mb-1">Pilihan Ukuran & Layanan Portrait</h2>
+            <p class="text-secondary small mb-0">Harga dasar untuk 1 wajah. Tambahan wajah dalam satu kertas dikenakan harga dinamis tergantung ukuran kertas.</p>
+        </div>
+
+        <div class="row g-3" id="paketCardsContainer">
+            <!-- Kartu paket dirender dinamis dari PAKET_CONFIG agar 100% sinkron -->
+        </div>
+    </section>
+
+    <!-- 4. KALKULATOR SIMULASI HARGA & FORM PESAN (#pesan) -->
+    <section id="pesan" class="section-space">
+        <div class="mb-3">
+            <h2 class="h4 fw-bold mb-1">Simulasi Biaya & Pemesanan</h2>
+            <p class="text-secondary small mb-0">Hitung perkiraan biaya sesuai kebutuhan Anda, lalu lanjutkan konsultasi foto melalui WhatsApp.</p>
+        </div>
+
+        <form class="box-flat p-3 p-md-4" onsubmit="event.preventDefault(); pesanWhatsApp();">
+            <div class="row g-3 mb-3">
+                <div class="col-sm-6">
+                    <label for="namaPemesan" class="form-label small fw-bold">Nama Pemesan <span class="text-danger">*</span></label>
+                    <input type="text" id="namaPemesan" class="form-control form-control-sm" placeholder="Contoh: Rina Sari" required>
+                </div>
+                <div class="col-sm-6">
+                    <label for="keperluanJenis" class="form-label small fw-bold">Keperluan & Tanggal Acara</label>
+                    <div class="input-group input-group-sm">
+                        <select id="keperluanJenis" class="form-select" aria-label="Pilih keperluan">
+                            <option value="Kado Ulang Tahun">Ulang Tahun</option>
+                            <option value="Kado Wisuda">Wisuda</option>
+                            <option value="Kado Pernikahan / Anniversary">Pernikahan / Anniv</option>
+                            <option value="Kenang-kenangan Keluarga">Keluarga</option>
+                            <option value="Koleksi Pribadi">Koleksi Pribadi</option>
+                        </select>
+                        <input type="date" id="tanggalAcara" class="form-control" aria-label="Pilih tanggal acara">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label for="calcSize" class="form-label small fw-bold">Ukuran Kertas</label>
+                    <select id="calcSize" class="form-select form-select-sm" onchange="ubahUkuran()">
+                        <!-- Opsi diisi otomatis dari PAKET_CONFIG -->
+                    </select>
+                </div>
+                <div class="col-sm-6">
+                    <label for="calcFaces" class="form-label small fw-bold">Jumlah Wajah dalam 1 Kertas</label>
+                    <select id="calcFaces" class="form-select form-select-sm" onchange="hitungEstimasi()">
+                        <!-- Opsi diisi otomatis sesuai ukuran kertas -->
+                    </select>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="optText" checked>
+                        <label class="form-check-label small" for="optText">
+                            Tambah Tulisan Nama / Tanggal / Ucapan Singkat (Gratis)
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box Hasil Kalkulasi -->
+            <div class="p-3 rounded border" style="background-color: #f4f1ea;">
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3">
+                    <div>
+                        <div class="small text-secondary">Perkiraan Total Biaya:</div>
+                        <div class="h4 fw-bold text-sage mb-1" id="totalHarga">Rp 80.000</div>
+                        <div class="small text-secondary mb-1" id="rincianHarga" style="font-size: 0.78rem;">
+                            Rincian: Ukuran A4 (Rp 80.000)
+                        </div>
+                        <div class="small text-muted" id="estimasiWaktu" style="font-size: 0.78rem;">
+                            Estimasi pengerjaan: 1–7 hari kerja
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-sage px-4">
+                        Kirim Foto via WhatsApp
+                    </button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- 5. KETENTUAN & ALUR PEMESANAN (#ketentuan) -->
+    <section id="ketentuan" class="section-space">
+        <div class="mb-3">
+            <h2 class="h4 fw-bold mb-1">Alur & Ketentuan Pemesanan</h2>
+            <p class="text-secondary small mb-0">Transparansi tahapan kerja dari pengiriman foto referensi hingga paket tiba.</p>
+        </div>
+
+        <div class="accordion" id="accordionKetentuan">
+            <div class="accordion-item border mb-2">
+                <h3 class="accordion-header">
+                    <button class="accordion-button py-2 fw-semibold small" type="button" data-bs-toggle="collapse" data-bs-target="#stepOne">
+1. Tahapan Pengerjaan & Pembayaran (DP 50%)
+                    </button>
+                </h3>
+                <div id="stepOne" class="accordion-collapse collapse show" data-bs-parent="#accordionKetentuan">
+                    <div class="accordion-body small text-secondary">
+                        <ol class="ps-3 mb-0">
+                            <li>Kirim 2–3 foto referensi untuk pengecekan pencahayaan dan ketajaman wajah.</li>
+                            <li>Pembayaran tanda jadi (DP) sebesar 50% untuk masuk ke daftar <a href="./antrian.html" class="text-sage fw-semibold">antrian pengerjaan</a>.</li>
+                            <li>Pengiriman foto tahap sketsa pensil untuk persetujuan proporsi wajah sebelum diwarnai.</li>
+                            <li>Pelunasan sisa 50% setelah foto hasil akhir lukisan selesai sebelum pengiriman.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border mb-2">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed py-2 fw-semibold small" type="button" data-bs-toggle="collapse" data-bs-target="#stepTwo">
+2. Kriteria Foto Referensi yang Disarankan
+                    </button>
+                </h3>
+                <div id="stepTwo" class="accordion-collapse collapse" data-bs-parent="#accordionKetentuan">
+                    <div class="accordion-body small text-secondary">
+                        Gunakan foto dengan pencahayaan terang dan jelas (tidak pecah/buram saat diperbesar pada area mata dan ekspresi wajah). Jika ingin menggabungkan dua foto berbeda, pastikan sudut pencahayaan wajah tidak terlalu bertolak belakang.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed py-2 fw-semibold small" type="button" data-bs-toggle="collapse" data-bs-target="#stepThree">
+3. Standar Pengemasan & Pengiriman
+                    </button>
+                </h3>
+                <div id="stepThree" class="accordion-collapse collapse" data-bs-parent="#accordionKetentuan">
+                    <div class="accordion-body small text-secondary">
+                        Setiap lukisan dimasukkan ke dalam plastik pelindung tahan air, diapit oleh dua lapis papan keras anti-tekuk (<em>hardboard</em>/kardus tebal) atau pipa pelindung (kardus tebal/PVC sesuai ukuran), dan dilapisi <em>bubble wrap</em> agar aman selama perjalanan ekspedisi.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. KONTAK & KONSULTASI (#hubungi) -->
+    <footer id="hubungi" class="section-space text-center">
+        <div class="box-flat p-4">
+            <span class="badge badge-paper mb-2">Konsultasi Foto Gratis</span>
+            <h2 class="h5 fw-bold mb-2">Belum Yakin Foto Anda Cocok Dilukis?</h2>
+            <p class="text-secondary small mb-3">
+                Kirimkan foto Anda terlebih dahulu untuk pengecekan gratis tanpa kewajiban memesan. Saya akan bantu rekomendasikan ukuran dan komposisi terbaiknya.
+            </p>
+            <div class="d-flex justify-content-center flex-wrap gap-2">
+                <a href="https://wa.me/6281234567890?text=Halo%20Robitea,%20saya%20ingin%20konsultasi%20foto%20untuk%20lukisan%20portrait%20cat%20air." target="_blank" class="btn btn-sage btn-sm px-4 py-2">
+                    Chat WhatsApp Sekarang
+                </a>
+                <a href="./antrian.html" class="btn btn-sage-outline btn-sm px-3 py-2">
+                    Cek Status Antrian
+                </a>
+            </div>
+        </div>
+        <div class="text-muted small mt-3">
+            &copy; 2026 Robitea Website — Lukisan Portrait Cat Air Custom.
+        </div>
+    </footer>
+
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS: Single Source of Truth untuk Dynamic Pricing -->
+<script>
+    const PAKET_CONFIG = {
+        'A5': {
+            nama: 'Ukuran A5',
+            dimensi: '14.8 × 21 cm',
+            badge: 'Ringkas',
+            highlight: false,
+            defaultSelected: false,
+            basePrice: 70000,
+            maxFaces: 1,
+            extraFacePrice: 0,
+            days: '1–7 hari kerja',
+            fitur: [
+                'Khusus 1 wajah (Fixed)',
+                'Ketebalan kertas cat air 200 gsm',
+                'Gratis tulisan nama / ucapan',
+                'Pipa Kardus Tebal',
+                'Estimasi 1–7 hari kerja'
+            ]
+        },
+        'A4': {
+            nama: 'Ukuran A4',
+            dimensi: '21 × 29.7 cm',
+            badge: 'Paling Diminati',
+            highlight: true,
+            defaultSelected: true,
+            basePrice: 80000,
+            maxFaces: 2,
+            extraFacePrice: 10000,
+            days: '1–7 hari kerja',
+            fitur: [
+                'Ideal 1–2 wajah (+Rp 10.000 wajah ke-2)',
+                'Ketebalan kertas cat air 200 gsm',
+                'Kertas karton ulang tahun / anniversary',
+                'Bubble Wrap & Pipa Kardus Tebal',
+                'Gratis tulisan nama / ucapan',
+                'Estimasi 1–7 hari kerja'
+            ]
+        },
+        'A3': {
+            nama: 'Ukuran A3',
+            dimensi: '29.7 × 42 cm',
+            badge: 'Keluarga / Besar',
+            highlight: false,
+            defaultSelected: false,
+            basePrice: 110000,
+            maxFaces: 5,
+            extraFacePrice: 20000,
+            days: '1–7 hari kerja',
+            fitur: [
+                'Ideal 1–5 wajah (+Rp 20.000 / wajah)',
+                'Ketebalan kertas cat air 200 gsm',
+                'Kertas karton ulang tahun / anniversary',
+                'Bubble Wrap & Pipa Kardus Tebal',
+                'Gratis tulisan nama / ucapan',
+                'Estimasi 1–7 hari kerja'
+            ]
+        },
+        'A2': {
+            nama: 'Ukuran A2',
+            dimensi: '42 × 59,4 cm',
+            badge: 'Jumbo',
+            highlight: false,
+            defaultSelected: false,
+            basePrice: 230000,
+            maxFaces: 7,
+            extraFacePrice: 35000,
+            days: '1–7 hari kerja',
+            fitur: [
+                'Ideal 1–7 wajah (+Rp 35.000 / wajah)',
+                'Ketebalan kertas cat air 200 gsm',
+                'Kertas karton ulang tahun / anniversary',
+                'Bubble Wrap & Pipa PVC',
+                'Gratis tulisan nama / ucapan',
+                'Estimasi 1–7 hari kerja'
+            ]
+        }
+    };
+
+    function formatRupiah(angka) {
+        return 'Rp ' + angka.toLocaleString('id-ID');
+    }
+
+    function formatTanggalIndo(dateString) {
+        if (!dateString) return '';
+        const [tahun, bulan, tanggal] = dateString.split('-');
+        const dateObj = new Date(tahun, bulan - 1, tanggal);
+        return dateObj.toLocaleDateString('id-ID', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+        });
+    }
+
+    // Render kartu layanan & opsi dropdown ukuran dari PAKET_CONFIG
+    function renderPaketUI() {
+        const cardsContainer = document.getElementById('paketCardsContainer');
+        const selectUkuran = document.getElementById('calcSize');
+
+        cardsContainer.innerHTML = '';
+        selectUkuran.innerHTML = '';
+
+        Object.entries(PAKET_CONFIG).forEach(([kode, cfg]) => {
+            // 1. Render Kartu Layanan
+            const boxClass = cfg.highlight ? 'box-highlight' : 'box-flat';
+            const badgeClass = cfg.highlight ? 'bg-dark text-white' : 'badge-paper';
+            const btnClass = cfg.highlight ? 'btn-sage' : 'btn-sage-outline';
+            const listItems = cfg.fitur.map(item => `<li>${item}</li>`).join('');
+
+            cardsContainer.innerHTML += `
+                <div class="col-md-6">
+                    <div class="${boxClass} p-3 h-100 d-flex flex-column">
+                        <span class="badge ${badgeClass} align-self-start mb-2">${cfg.badge}</span>
+                        <h3 class="h6 fw-bold mb-1">${cfg.nama}</h3>
+                        <div class="text-muted small mb-2">${cfg.dimensi}</div>
+                        <div class="fs-5 fw-bold text-ochre mb-2">${formatRupiah(cfg.basePrice)}</div>
+                        <ul class="small text-secondary ps-3 mb-3 flex-grow-1">
+                            ${listItems}
+                        </ul>
+                        <button type="button" class="btn ${btnClass} btn-sm w-100" onclick="pilihPaket('${kode}')">
+                            Pilih ${kode}
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            // 2. Render Option Select Ukuran
+            const option = document.createElement('option');
+            option.value = kode;
+            option.text = `${kode} (${cfg.dimensi}) — ${formatRupiah(cfg.basePrice)}`;
+            if (cfg.defaultSelected) option.selected = true;
+            selectUkuran.appendChild(option);
+        });
+    }
+
+    function pilihPaket(kodeUkuran) {
+        const selectUkuran = document.getElementById('calcSize');
+        selectUkuran.value = kodeUkuran;
+        ubahUkuran();
+        document.getElementById('pesan').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function ubahUkuran() {
+        const kodeUkuran = document.getElementById('calcSize').value;
+        const config = PAKET_CONFIG[kodeUkuran];
+        const selectFaces = document.getElementById('calcFaces');
+
+        // Perbarui dropdown jumlah wajah sesuai aturan kelipatan ukuran terpilih
+        const prevFaces = parseInt(selectFaces.value, 10) || 1;
+        selectFaces.innerHTML = '';
+
+        for (let i = 1; i <= config.maxFaces; i++) {
+            const option = document.createElement('option');
+            option.value = i;
+
+            if (i === 1) {
+                option.text = config.maxFaces === 1
+                    ? '1 Wajah (Fixed)'
+                    : '1 Wajah (Solo)';
+            } else {
+                const tambahan = (i - 1) * config.extraFacePrice;
+                option.text = `${i} Wajah (+${formatRupiah(tambahan)})`;
+            }
+
+            selectFaces.appendChild(option);
+        }
+
+        selectFaces.value = prevFaces <= config.maxFaces ? prevFaces : 1;
+
+        hitungEstimasi();
+    }
+
+    function hitungEstimasi() {
+        const kodeUkuran = document.getElementById('calcSize').value;
+        const config = PAKET_CONFIG[kodeUkuran];
+        const faces = parseInt(document.getElementById('calcFaces').value, 10) || 1;
+
+        const extraTotal = (faces - 1) * config.extraFacePrice;
+        const total = config.basePrice + extraTotal;
+
+        // Susun rincian biaya secara transparan
+        const komponen = [`${kodeUkuran} (${formatRupiah(config.basePrice)})`];
+        if (extraTotal > 0) {
+            komponen.push(`+${faces - 1} wajah (${formatRupiah(extraTotal)})`);
+        }
+
+        document.getElementById('totalHarga').innerText = formatRupiah(total);
+        document.getElementById('rincianHarga').innerText = 'Rincian: ' + komponen.join(' • ');
+        document.getElementById('estimasiWaktu').innerText = 'Estimasi pengerjaan: ' + config.days;
+    }
+
+    function pesanWhatsApp() {
+        const nama = document.getElementById('namaPemesan').value.trim();
+        const jenisAcara = document.getElementById('keperluanJenis').value;
+        const rawTanggal = document.getElementById('tanggalAcara').value;
+        const tanggalTeks = rawTanggal ? ` (Tanggal: ${formatTanggalIndo(rawTanggal)})` : '';
+        const acaraLengkap = `${jenisAcara}${tanggalTeks}`;
+
+        const kodeUkuran = document.getElementById('calcSize').value;
+        const config = PAKET_CONFIG[kodeUkuran];
+        const faces = parseInt(document.getElementById('calcFaces').value, 10) || 1;
+        const extraTotal = (faces - 1) * config.extraFacePrice;
+
+        const infoWajah = faces === 1
+            ? '1 wajah'
+            : `${faces} wajah (+${formatRupiah(extraTotal)})`;
+        const withText = document.getElementById('optText').checked ? 'Ya (Gratis)' : 'Tidak';
+        const totalText = document.getElementById('totalHarga').innerText;
+        const nomorWA = '628986047675';
+
+        const pesan = `Halo Robitea, saya *${nama}*.\n` +
+                      `Saya ingin konsultasi pesanan lukisan portrait cat air:\n` +
+                      `- Ukuran: ${kodeUkuran} (${config.dimensi}) — ${formatRupiah(config.basePrice)}\n` +
+                      `- Jumlah Wajah: ${infoWajah}\n` +
+                      `- Tambah Tulisan: ${withText}\n` +
+                      `- Keperluan: ${acaraLengkap}\n` +
+                      `- Estimasi Total Biaya: *${totalText}*\n\n` +
+                      `Berikut saya lampirkan foto referensinya:`;
+
+        window.open(`https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`, '_blank');
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        renderPaketUI();
+        ubahUkuran();
+
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('tanggalAcara').setAttribute('min', today);
+    });
+</script>
+</body>
+</html>
