@@ -13,9 +13,17 @@
         .container-custom {
 		  max-width: 700px; /* Tentukan lebar maksimal yang diinginkan */
 		}
-
+		
 		html {
 		  scroll-behavior: smooth;
+		}
+		
+		/* Tampilan Mobile (layar di bawah 768px) */
+		@media (max-width: 767.98px) {
+		  .nav-buttons .btn {
+			padding: 0.25rem 0.5rem; /* Menyamai ukuran btn-sm */
+			font-size: 0.78rem;
+		  }
 		}
     </style>
 </head>
